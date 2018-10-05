@@ -43,6 +43,16 @@ public class Main {
         System.out.println("\ncost: " + main.calculateCost());
     }
 
+    /**
+     *
+     * Finds one of the many possible coverages of travel days with periods of specified length,
+     * each of which reduces cost
+     *
+     * @param periodLength length of a period
+     * @param periodPrice price for a ticket for a period
+     * @param travelDaysToProcess array list of day numbers on which travel will take place
+     * @return list of pairs of first days and periods starting on these days (periods are lists of travel days)
+     */
     public List<Pair<Integer, List<Integer>>> calculatePeriods(int periodLength, int periodPrice, List<Integer> travelDaysToProcess) {
         Integer day;
         List<Pair<Integer, List<Integer>>> travelPeriods = new ArrayList<Pair<Integer, List<Integer>>>();
